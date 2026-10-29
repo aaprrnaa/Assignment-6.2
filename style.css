@@ -1,0 +1,172 @@
+
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    color: #1d4ed8;
+}
+
+/* Card layout */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Common card styles */
+.card {
+    width: 300px;
+    max-width: 100%;
+    min-height: 300px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid;
+    background-color: white;
+}
+
+.card h2 {
+    font-size: 26px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Basic card */
+.basic {
+    background-color: #eff6ff;
+    border-color: #60a5fa;
+}
+
+.basic h2 {
+    color: #1d4ed8;
+}
+
+.basic button {
+    background-color: #2563eb;
+}
+
+/* Standard card */
+.standard {
+    background-color: #ecfdf5;
+    border-color: #34d399;
+}
+
+.standard h2 {
+    color: #047857;
+}
+
+.standard button {
+    background-color: #059669;
+}
+
+/* Premium card */
+.premium {
+    background-color: #faf5ff;
+    border-color: #c084fc;
+}
+
+.premium h2 {
+    color: #7e22ce;
+}
+
+.premium button {
+    background-color: #7e22ce;
+}
+
+/* Display property demonstration */
+.display-demo {
+    max-width: 900px;
+    margin: 50px auto 0;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+}
+
+.display-demo h2 {
+    color: #1d4ed8;
+}
+
+/* Block: occupies a new line */
+.block-example {
+    display: block;
+    width: 220px;
+    height: 45px;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: #dbeafe;
+    border: 1px solid #2563eb;
+}
+
+/* Inline: stays within the text flow */
+.inline-example {
+    display: inline;
+    background-color: #fef3c7;
+    border: 1px solid #d97706;
+    padding: 5px;
+}
+
+/* Inline elements ignore width and height settings */
+.inline-block-example {
+    display: inline-block;
+    width: 160px;
+    height: 55px;
+    margin: 8px;
+    padding: 15px 8px;
+    text-align: center;
+    background-color: #ede9fe;
+    border: 1px solid #7c3aed;
+    border-radius: 6px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #64748b;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .display-demo {
+        padding: 16px;
+    }
+}
